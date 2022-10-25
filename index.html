@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="canvas1"></canvas>
+    <div id="controls">
+        <button id="randomizeButton">Randomize</button>
+        <div>
+            <input id="spread" type="range" min="-3.1" max="10" 
+            step="0.05" value="1">
+            <label for="spread">Spread</label>
+            
+        </div>
+        <div>
+            <input id="sides" type="range" min="2" max="10" 
+            step="1" value="5">
+            <label for="sides">Sides</label>
+        </div>
+        <div>
+            <input id="translate" type="range" min="-5" max="5" 
+            step="0.2" value="1">
+            <label id="label" for="translate">Translate</label>
+        </div>
+        <div>
+            <input id="all" type="range" min="0" max="10" 
+            step="0.2" value="0">
+            <label id="all" for="all">All</label>
+        </div>
+        <div>
+            <button id="reset">Reset</button>
+        </div>
+        <div>
+            <button id="go">Hold Button</button>
+        </div>
+    </div>
+    <script src="sc.js"></script>
+</body>
+</html>
